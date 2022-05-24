@@ -1,0 +1,9 @@
+.content-block { 
+    padding:3px;
+    float:right; 
+    text-align:center;
+}
+.content-block:after { 
+    clear:both;
+} 
+

@@ -1,0 +1,919 @@
+/*
+Theme Name: Voyage-lombok
+Theme URI: http://voyage-lombok.com/
+Text Domain: voyage-lombok
+Description: 
+Version: 1.0
+Author: Artnelson 
+Author URI: http://arthikart.com
+*/
+
+/* CSS Document */
+
+/* WORDPRESS EDITOR*/
+
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+* { box-sizing: border-box; }
+.content-block { 
+    padding:3px;
+    float:right; 
+    text-align:center;
+}
+.content-block:after { 
+    clear:both;
+} 
+/*----------------------------------------*/
+
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	word-wrap:break-word !important;
+	background : #fff;
+}	
+
+#content {
+	background-color: #f9f9f9;
+	position: absolute;
+	margin: 0 auto;
+	min-width: 250px;
+    top: 150px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+	overflow-y: auto; 
+	display: flex;
+  	flex-direction: column;
+  	max-width:100%;
+}
+
+.post {
+    flex-grow: 1;
+}
+.post img {
+	max-width:100%;
+	height:auto;
+}
+
+.sub-post {
+	background: #fff;
+	margin: 10px 180px;
+	flex: 0 1 auto;
+}
+
+.sub-post img {
+	float: left;
+	object-fit: contain;
+	width: 30%;
+	height: auto;
+	max-width: 450px;
+	margin: 0;
+	padding: 0;
+}
+
+.sub-post-summary {
+	float: right;
+	width: 70%;
+}
+
+.sub-post-summary p {
+	margin: 20px;
+}
+
+.sub-post-title {
+	margin: 20px;
+	color: #2DC6C6;
+	font-size: 24px;
+	text-decoration: none;
+}
+
+.sub-post-summary a { 
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.sub-post-summary a:hover { 
+	color: #444;
+}
+
+a.more-link {
+	display: table;
+	text-decoration: none;
+	background: #2DC6C6;
+	color: #fff;
+	border-radius: 3px;
+	padding: 10px;
+	margin-top: 20px;
+	float: right;
+}
+
+a.more-link:hover {
+	background: #444;
+	color: #fff;
+}
+
+.sub-post-none {
+	flex-grow: 1;
+}
+
+.entry {
+	background: #fff;
+	margin: 10px 180px;
+	padding: 20px;
+}
+
+@media all and (max-width : 768px) {
+	.entry, .sub-post {
+  	 	margin: 10px 20px;
+  	}
+  	.sub-post-summary {
+		width: 100%;
+	}
+}
+
+.title-wrap {
+	position: relative;
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: auto;
+  	padding: 175px 0;
+}
+
+.title-wrap h1.entry-title {
+  	font-weight: bold;
+  	color: #fff;
+  	letter-spacing: 5px;
+  	text-shadow: 1px 1px 2px black;
+  	text-transform: uppercase;
+}
+
+p {
+	text-align: justify;
+	text-decoration: none;
+	color: #444;
+	font-size: 1.4em;
+	line-height: 1.5em;
+}
+
+
+h1 {
+	font-size:2.3em;
+    color: #2DC6C6;
+}
+
+h2 {
+	font-size: 1.9em;
+    color: #2DC6C6;
+}
+
+h3 {
+	font-style: 1.6em;
+	color: #444;
+}
+
+a {
+	color: #2dc5c6;
+	text-decoration: none;
+}
+
+a:hover { 
+	color: #444;
+}
+
+#image-slide {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+#mainheader img {
+	width:100%;
+	height:100%;
+	object-fit:cover;
+}
+
+#menu-container {
+	width: 100%;
+	position: fixed;
+	top: 0;
+    z-index: 4 !important;
+    background: #fff;
+    border-bottom: 2px solid #2dc5c6;
+}
+
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+.toggle-icon {
+	float: right;
+	display: inline-block;
+}
+
+.toggle-icon-line {
+	width: 20px;
+    height: 3px;
+    background-color: #444;
+    margin: 2px 0;
+}
+
+/* Style du menu de navigation */
+.nav-main { 
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	padding-top: 7em;
+}
+
+#logo {
+	width: 11em;
+	height: auto;
+	display: block;
+	margin: 0;
+	padding: 0;
+	padding: 10px 10px;
+	float: left;
+	font-size:20px;
+}
+
+.social-media {
+	display: block;
+	float: right;
+	margin-top: 30px;
+	margin-right: 30px;
+	padding: 10px;
+}
+
+.fb-icon {
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	background-size: 50px 50px;
+}
+
+.inst-icon {
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	background-size: 50px 50px;
+}
+
+a:hover .fb-icon {
+	background-size: 50px 50px;
+}
+
+a:hover .inst-icon {
+	background-size: 50px 50px;
+}
+
+#menu-container.smaller #logo {
+	width:200px;
+	margin: 0;
+	padding: 0 10px;
+}
+
+#menu-container.smaller .nav-main {
+	padding-top: 65px;
+}
+
+/* Ici, il faut faire un "clear" à cause du "ul li" "float:left" */
+
+.nav-main:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.nav-main ul {
+	float: right;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+}
+	
+/* On positionne les liens de niveau 1 horizontalement */
+.nav-main ul li {
+	margin: 0px;
+	display: inline-block;
+	float: left;
+	background-color: #fff;
+	vertical-align: bottom;
+}
+
+/* Style des liens de niveau 1 */
+.nav-main a {
+	display:block;
+	padding:14px 14px;	
+	color: #2dc5c6;
+	font-size:14px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.nav-main a:hover { 
+	color: #444;
+}
+
+/* Style pour les liens de niveau 2 */
+.nav-main li:hover ul a {
+    color: #fff;
+	background: #444;
+}
+
+.nav-main li:hover ul a:hover {
+    background: #2dc5c6;
+    color: #fff;
+}
+
+/* On cache les Dropdowns par défaut (doivent être positionnés en absolu) */
+.nav-main ul ul {
+	display: none;
+	position: absolute; 
+	/* Distance égale au "line-height" des liens de niveau 1 */
+	/* CORRECTION POUR SUPPRIMER GAP ENTRE MENU ET SOUS MENU */
+	/*top: 60px; */
+}
+	
+/* On affiche les Dropdowns quand on passe dessus */
+.nav-main ul li:hover > ul {
+	display: inherit;
+}
+	
+/* Style des Dropdowns */
+.nav-main ul ul li {
+	width: 170px;
+	float: none;
+	display: list-item;
+	position: relative;
+}
+
+/* Pour changer le symbole ' ↓' */
+.nav-main li > a:after { content:  ' ↓'; }
+.nav-main li > a:only-child:after { content: ''; }
+
+/* Style du footer */
+
+#footer {
+	background: #fff;
+	width: 100%;
+	height: auto;
+	border-top: 2px solid #2dc5c6;
+	position: relative;
+   	bottom: 0;
+   	left: 0;
+   	text-align: center;
+}
+
+.footer-info
+{
+display:inline-block;
+list-style:none;
+margin: 2em;
+vertical-align: top;
+}
+
+#footer-logo {
+display: inline-block;
+vertical-align: top;
+max-width:20em;
+margin: 2em;
+
+
+}
+#footer-logo img {
+max-width:100%;
+}
+
+.nav-footer {
+display: inline-block;
+margin:2em;
+vertical-align: top;
+}
+
+.nav-footer:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.nav-footer ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: inline-block;
+}
+
+.nav-footer ul li {
+	display: block;
+}
+
+.nav-footer a {
+	display:block;
+	padding:14px 14px;	
+	color: #444;
+	font-size:14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.nav-footer a:hover { 
+	color: #2dc5c6;
+}
+
+#call-to-action {
+	position: fixed;
+	right: 20px;
+	bottom: 0;
+	
+}
+
+.call-to-action-button {
+	width: 195px;
+	height: 90px;
+	display: block;
+	background-size: contain;
+}
+
+.call-to-action-text {
+	position: absolute;
+	top: 25px;
+	margin: 21.5px;
+	color: #fff;
+	font-size: 22px;
+	font-style: normal;
+}
+
+a:hover .call-to-action-button {
+	background-size: contain;
+}
+
+/* Requêtes Media selon la taille de l'écran
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+	#logo {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0;
+		float: none;
+	}
+	
+	.social-media {
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 0;
+	}
+
+	.fb-icon, .inst-icon{
+		height: 35px;
+		width: 35px;
+		background-size: 35px 35px;
+	}
+
+	a:hover .fb-icon, .inst-icon {
+		background-size: 35px 35px;
+	}
+	#call-to-action {
+		right:5px;
+	}
+	.call-to-action-button {
+		width: 150px;
+		height: 70px;
+	}
+
+
+	.call-to-action-text {
+	top: 21px;
+	margin: 13px;
+	font-size: 18px;
+}
+
+	#menu-container.smaller #logo
+	{
+	display: none;
+	}
+	
+	#menu-container.smaller .nav-main
+	{
+	padding-top: 0px;
+	}
+
+	#menu-container.smaller .social-media {
+		display: none;
+	}
+
+	.nav-main {
+		margin: 0;
+		padding: 0;
+		max-height: 300px;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	/* Cache le bouton du menu par défaut */
+	.toggle + a,
+	.nav-main ul {
+		display: none;
+	}
+
+	/* Style du label "toggle" */
+	.toggle {
+		display: block;
+		background-color: #fff;
+		padding:14px 20px;	
+		color:#444;
+		font-size:14px;
+		text-decoration:none;
+		font-weight: bold;
+		text-transform: uppercase;
+		border:none;
+	}
+
+	/* Affiche le Dropdown quand on clique sur le label parent */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	/* La largeur des items passe à 100% */
+	.nav-main ul li {
+		display: block;
+		width: 100%;
+	}
+
+	.nav-main ul ul .toggle,
+	.nav-main ul ul a {
+		padding: 0 40px;
+	}
+
+	.nav-main ul ul ul a {
+		padding: 0 80px;
+	}
+
+ 	.nav-main ul ul ul a {
+		color: #2dc5c6;
+	}
+
+	.nav-main a:hover {
+		color: #444;
+	}
+  
+	.nav-main ul li ul li .toggle,
+	.nav-main ul ul a,
+  	.nav-main ul ul ul a{
+		padding:14px 20px;	
+		color:#fff;
+		font-size:14px; 
+	}
+  
+	.nav-main ul li ul li .toggle,
+	.nav-main ul ul a {
+		background-color: #444; 
+	}
+
+	/* On cache les  Dropdowns par défaut */
+	.nav-main ul ul {
+		float: none;
+		position:static;
+		color: #fff;
+		display: block;
+	}
+		
+	.nav-main ul ul li:hover > ul,
+	.nav-main ul li:hover > ul {
+		/*display: none;*/
+	}	
+	.nav-main ul ul li {
+		display: block;
+		width: 100%;
+	}
+	.nav-main ul ul ul li {
+		position: static;
+	}
+}
+
+@media all and (max-width : 330px) {
+	.nav-main ul li {
+		display:block;
+		width: 94%;
+	}
+}
+
+/* ---------------- Categories and round link/images display in pages -----------------------*/
+
+.cat_link
+{
+display:inline-block;
+margin:0px;
+}
+
+.cat_link img
+{
+	max-width:100%;
+	max-height:100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.img-link-container {
+    display: inline-block;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    width: 400px;
+}
+
+.img-link-container img {
+	width:100%;
+	height:100%;
+	object-fit: cover;
+}
+
+.img-link {
+    border: 50px solid #f9f9f9;
+    border-radius: 900px;
+    cursor: pointer;
+    width: 410px;
+    height: 410px;
+    top: -5px;
+    left: -5px;
+    position: absolute;
+    transition: all 0.3s ease 0s;
+}
+
+.img-link:hover
+{
+	transform:scale(1.3);
+}
+
+.img-link-title
+{
+margin-top:0px;
+}
+
+@media all and (max-width : 768px) {
+
+.img-link-container {
+	width:250px;
+	height:250px;
+
+}
+.img-link {
+	width: 260px;
+    height: 260px;
+   
+}
+}
+
+/* ---------------- End of Categories and round link/images display in pages -----------------------*/
+
+
+/*----------------- Display of images filter by categories ----------------------------------------- */
+
+.cat_display
+{
+	text-align:center;
+	padding:15px;
+}
+.cat_filter
+{
+	display:inline-block;
+	position:relative;
+	cursor:pointer;
+	width:370px;
+	height:230px;
+	overflow:none;
+}
+
+.cat_filter > .background
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.6);
+	display: initial;
+}
+
+.cat_filter.active > .background {
+	display: none;
+}
+
+.cat_filter img
+{
+	width:100%;
+	height:100%;
+	object-fit: cover;
+}
+.img-filter-title
+{
+	width:100%;
+	position: absolute;
+	top: 30%;
+	color: grey;
+	text-shadow: 1px 1px 2px black;
+	/*text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;*/
+}
+.cat_filter.active .img-filter-title
+{
+	color:#fff;
+}
+
+.cat_filter i 
+{
+	color: #fff;
+	font-size: 5em;
+}
+
+.clearfix
+{
+	clear: both;
+}
+
+.center {
+	text-align: center;
+	font-style: italic;
+}
+
+.cat-filter-title {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	color: #444;
+}
+
+@media all and (max-width : 768px) {
+
+.sub-post img {
+	display: none;
+}
+
+.cat_filter {
+	width:185px;
+	height:115px;
+}
+
+.img-filter-title {
+	top:15%;
+	font-size:22px;
+}
+
+}
+
+/* -------------------------------------------------------------------------------------------*/
+
+/*------------ AFFICHAGE DES POSTS PREFERES -----------------------*/
+.featured {
+width:100%;
+text-align: center;
+margin:60px 0 60px 0;
+}
+
+.featured_post {
+display: inline-block;
+width:550px;
+height:350px;
+vertical-align:top;
+position:relative;
+cursor:pointer;
+}
+.featured_post img {
+width:100%;
+height:100%;
+margin:0;
+object-fit:cover;
+}
+.featured_text {
+background: rgba(0,0,0,0.5);
+position:absolute;
+bottom:0;
+width:100%;
+padding:15px;
+max-height:100%;
+}
+.featured_text, .featured_text p {
+color: white;
+font-size: 0.9em;
+}
+
+.featured_text h3 {
+	font-weight: bold;
+  	color: #fff;
+  	text-shadow: 1px 1px 2px black;
+  	margin-top: 1px;
+}
+
+@media all and (max-width : 768px) {
+
+.featured_post {
+width:100%;
+height:300px;
+}
+
+.featured_text, .featured_text p {
+
+}
+}
+/*----------------------------------------------------------------*/
+
+/* Style du formulaire de contact */
+div.wpcf7 { 
+	padding: 20px;
+	margin: 0;
+}
+
+.wpcf7 label {
+	color: #444;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="number"],
+.wpcf7 input[type="tel"],
+.wpcf7 input[type="date"],
+.wpcf7 textarea {
+	width: 100%;
+	border: 1px solid #2dc5c6;
+	border-radius: 3px;
+	background-color: #f9f9f9;
+	color: #444;
+	font-size: 14px;   
+	margin-top: 10px;
+	padding: 5px;
+}
+
+.wpcf7 input[type="submit"],
+.wpcf7 input[type="button"] { 
+	padding: 10px;
+	border-radius: 3px;
+	background-color: #2DC6C6;
+	color: #fff;
+	font-size: 17px;
+	text-align: center;
+}
+
+.wpcf7-form .wpcf7-response-output.wpcf7-validation-errors {
+    color: #D8000C;
+    background-color: #FFBABA;
+    border: 0;
+    padding: 10px;
+}
+
+.wpcf7-form .wpcf7-response-output.wpcf7-mail-sent-ok {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    border: 0;
+    padding: 10px;
+}
+
+div.wpcf7-mail-sent-ok:before,div.wpcf7-validation-errors:before {
+    font: 26px/30px dashicons;
+    margin-right: 16px;
+    vertical-align: middle;
+}
+
+div.wpcf7-mail-sent-ok:before {
+    content: "\f147";
+}
+
+div.wpcf7-validation-errors:before {
+    content: "\f158";
+}
+
+
+.post-block
+{
+display: inline-block;
+width:49%;
+margin:0;
+vertical-align:middle;
+padding:4px;
+}
+.post-block.small
+{
+width:34%;
+}
+.post-block.large
+{
+width:64%;
+}
+
+@media all and (max-width : 768px) {
+.post-block, .post-block.small, .post-block.large
+{
+width:100%;
+}
+}
